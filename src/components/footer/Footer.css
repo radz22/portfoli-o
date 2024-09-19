@@ -28,6 +28,10 @@
 .contact-p {
   margin-top: 10px;
 }
+.social-contact {
+  display: none;
+}
+
 .contact-p p {
   color: #ffffff;
   font-size: 20px;
@@ -62,4 +66,103 @@
   color: #ffffff;
   font-size: 13px;
   list-style: 13px;
+}
+
+/* responsive*/
+
+@media only screen and (max-width: 1200px) {
+  .footer .container .images {
+    width: 100px;
+  }
+  .contact h1 {
+    font-size: 22px;
+  }
+
+  .contact-p p {
+    font-size: 18px;
+  }
+  .social h1 {
+    font-size: 22px;
+  }
+
+  .social .icons .icon {
+    color: #ffffff;
+    font-size: 40px;
+  }
+  .container .logo2 {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer .container .images {
+    width: 90px;
+  }
+  .contact h1 {
+    font-size: 20px;
+  }
+
+  .contact-p p {
+    font-size: 16px;
+  }
+  .social h1 {
+    font-size: 18px;
+  }
+
+  .social .icons .icon {
+    color: #ffffff;
+    font-size: 35px;
+  }
+  .container .logo2 {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 20px 20px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .social-contact {
+    display: block;
+    justify-content: space-between;
+  }
+  .social-contact {
+    padding: 35px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .social-content {
+    margin-bottom: 40px;
+  }
+
+  .container .contact,
+  .container .social {
+    display: none;
+  }
+
+  .container .social-contact .contact,
+  .container .social-contact .social {
+    display: block;
+  }
+
+  .container .social-contact .contact h1,
+  .container .social-contact .social h1 {
+    font-size: 16px;
+  }
+
+  .container .social-contact .contact p {
+    font-size: 14px;
+  }
+
+  .container .social-contact .social .icon {
+    font-size: 30px;
+  }
 }

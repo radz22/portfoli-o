@@ -1,0 +1,92 @@
+.painting {
+  width: 100%;
+  height: auto;
+}
+.painting-container-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 70px;
+}
+
+.painting-container-1 h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 58.09px;
+}
+
+.painting-container-1-p {
+  margin-top: 50px;
+}
+
+.painting-container-1-p p {
+  font-size: 24px;
+  line-height: 29.05px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.painting-container-1-p .second-p {
+  margin-top: 30px;
+}
+
+.painting-container-2 {
+  width: 100%;
+  height: auto;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+
+.painting-container-2-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  gap: 25px;
+}
+
+.painting-container-2-content img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .painting-container-1 h1 {
+    font-size: 30px;
+  }
+  .painting-container-1-p p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+  .painting-container-1 h1 {
+    font-size: 25px;
+  }
+  .painting-container-1-p p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .painting-container-1 {
+    padding: 60px 30px;
+  }
+  .painting-container-1-p {
+    margin-top: 20px;
+  }
+
+  .painting-container-2 {
+    margin-top: 0px;
+  }
+
+  .painting-container-2-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    place-items: center;
+    gap: 25px;
+  }
+}
